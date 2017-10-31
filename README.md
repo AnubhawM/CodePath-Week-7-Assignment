@@ -6,11 +6,11 @@ Time spent: **6** hours spent in total
 ## Pentesting Report
 
 1. (Required) WordPress 4.2 Cross Site Scripting
-  - [ ] Summary: 
+  - [ ] Summary: When making a comment, if its size is greater than 64 kB, it will be truncated. This affects the HTML that will be generated on the page. Due to this, an XSS attack can be possible.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: 
+  - [X] GIF Walkthrough: <img src='https://github.com/AnubhawM/CodePath-Week-7-Assignment/blob/master/XSS1.gif' width='' alt='Video Walkthrough' />
   - [X] Steps to recreate: 
   
   Enter the following as a comment:
@@ -19,22 +19,24 @@ style=position:absolute;left:0;top:0;width:5000px;height:5000px
  AAAAAAAAAAAA...'></a>
  
  
- Note: The "AAA..." needs to be greater than 64 bits.
+ Note: The "AAA..." needs to be greater than 64 kB.
     
 2. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
-  - [ ] Summary: 
+  - [ ] Summary: This exploit is all about placing a malicious script in a comments box to obtain cookie information.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: 
+  - [X] GIF Walkthrough: <img src='https://github.com/AnubhawM/CodePath-Week-7-Assignment/blob/master/XSS3.gif' width='' alt='Video Walkthrough' />
   - [X] Steps to recreate: Type <script>while(1){alert(document.cookie);}</script> in a comment.
+  
+  
     
 3. (Required) WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
-  - [ ] Summary: 
+  - [X] Summary: The filename of an uploaded image is not not sanitized. Leveraging this, if the filename has a malicious script in it, it will execute when viewed.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [ ] GIF Walkthrough: 
+  - [X] GIF Walkthrough: <img src='https://github.com/AnubhawM/CodePath-Week-7-Assignment/blob/master/XSS2.gif' width='' alt='Video Walkthrough' />
   - [X] Steps to recreate: Upload an image with a malicious script in the title of the file. When the page containing the image is loaded, the script within the title will execute. 
   
 1. (Optional) Vulnerability Name or ID
