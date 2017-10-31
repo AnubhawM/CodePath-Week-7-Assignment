@@ -20,6 +20,7 @@ style=position:absolute;left:0;top:0;width:5000px;height:5000px
  
  
  Note: The "AAA..." needs to be greater than 64 kB.
+  - [ ] Affected source code:
     
 2. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
   - [X] Summary: This exploit is all about placing a malicious script in a comments box to obtain cookie information.
@@ -28,6 +29,7 @@ style=position:absolute;left:0;top:0;width:5000px;height:5000px
     - Fixed in version: 4.2.1
   - [X] GIF Walkthrough: <img src='https://github.com/AnubhawM/CodePath-Week-7-Assignment/blob/master/XSS3.gif' width='' alt='Video Walkthrough' />
   - [X] Steps to recreate: Type <script>while(1){alert(document.cookie);}</script> in a comment.
+  - [ ] Affected source code:
   
   
     
@@ -38,6 +40,7 @@ style=position:absolute;left:0;top:0;width:5000px;height:5000px
     - Fixed in version: 4.2.13
   - [X] GIF Walkthrough: <img src='https://github.com/AnubhawM/CodePath-Week-7-Assignment/blob/master/XSS2.gif' width='' alt='Video Walkthrough' />
   - [X] Steps to recreate: Upload an image with a malicious script in the title of the file. When the page containing the image is loaded, the script within the title will execute. 
+  - [ ] Affected source code:
   
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
