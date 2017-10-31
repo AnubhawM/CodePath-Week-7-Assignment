@@ -6,7 +6,7 @@ Time spent: **6** hours spent in total
 ## Pentesting Report
 
 1. (Required) WordPress 4.2 Cross Site Scripting
-  - [ ] Summary: When making a comment, if its size is greater than 64 kB, it will be truncated. This affects the HTML that will be generated on the page. Due to this, an XSS attack can be possible.
+  - [X] Summary: When making a comment, if its size is greater than 64 kB, it will be truncated. This affects the HTML that will be generated on the page. Due to this, an XSS attack can be possible.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
@@ -22,7 +22,7 @@ style=position:absolute;left:0;top:0;width:5000px;height:5000px
  Note: The "AAA..." needs to be greater than 64 kB.
     
 2. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
-  - [ ] Summary: This exploit is all about placing a malicious script in a comments box to obtain cookie information.
+  - [X] Summary: This exploit is all about placing a malicious script in a comments box to obtain cookie information.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
@@ -60,7 +60,7 @@ style=position:absolute;left:0;top:0;width:5000px;height:5000px
 
 ## Assets
 
-List any additional assets, such as scripts or files
+No assets were used.
 
 ## Resources
 
@@ -71,8 +71,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
-
+I had a LOT of trouble getting Vagrant to work. Kali simply would not work. So doing this assignment was extremely difficult not because of the actual challenges, but because I had so many issues setting up the pentesting environment. Once I could get my environment stable enough, doing the assignment tasks wasn't too difficult.
 ## License
 
     Copyright [yyyy] [name of copyright owner]
